@@ -1,0 +1,84 @@
+/* General Page Style */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f0f0, #dbeafe);
+  color: #333;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: #1f2937;
+  margin-bottom: 30px;
+}
+
+/* Main To-Do List Container */
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Each To-Do Item Card */
+.todo-list > li {
+  margin-bottom: 20px;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-list > li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Checkbox Styling */
+.todo-list input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Completed Task Style */
+.todo-list input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Sub-item Links List */
+.sub-item {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+/* Link Default Style */
+.sub-item-link {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+/* Link States */
+.sub-item-link:visited {
+  color: #800080;
+}
+
+.sub-item-link:hover {
+  color: #ff6600;
+}
+
+.sub-item-link:active {
+  color: red;
+}
+
+.sub-item-link:focus {
+  outline: 2px solid #33cc33;
+  outline-offset: 2px;
+}
